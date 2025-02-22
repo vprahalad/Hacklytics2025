@@ -36,7 +36,7 @@ if __name__ == "__main__":
     model = Model()
     
     # Example list of code words
-    code_words = ["stock", "dollars"]
+    code_words = values
     
     sentence = model.generate_sentence(code_words)
     print("Generated Sentence:", sentence)
