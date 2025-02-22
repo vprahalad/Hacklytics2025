@@ -13,7 +13,8 @@ class Model:
             "in the order they appear in the input list, though the words from  the "
             "input list can be separated by other words. Do not use the given words more times than the given words "
             "appear in the input list. Ensure the sentence fits in the character limit "
-            "and sounds like a normal Tweet."
+            "and sounds like a normal Tweet. Ensure the ratio of code words to total words in the generated Tweet is " 
+            "within 0.2 to 0.4."
         )
 
     def generate_sentence(self, code_words):
