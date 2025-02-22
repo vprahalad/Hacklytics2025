@@ -16,5 +16,5 @@ def codeWordGen(csvFilepath):
     stdDev = np.std(freqs)
     wordsInRange = [word for word, freq in wordFreq.items() if meanFreq - stdDev <= freq <= meanFreq + stdDev]
     return wordsInRange
-csvFilepath = ""
-codeWordGen(csvFilepath)
+csvFilepath = "cleaned_data.csv"
+print(codeWordGen(csvFilepath))
