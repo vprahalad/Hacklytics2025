@@ -1,0 +1,145 @@
+
+/* Make the entire background black */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Trebuchet MS, sans-serif;
+  background-color: black; /* Set background to black */
+  color: #f6c144;  /* Set text color to yellow */
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Ensure left panel stays black */
+}
+
+/* Right panel (Input section) */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Ensure right panel stays black */
+}
+
+.vertical-bar {
+  width: 2px; 
+  background-color: #f6c144;
+
+  ;
+  height: 100vh;
+}
+
+/* Title container */
+.title-container {
+  text-align: center;
+}
+
+/* Large centered title */
+.title {
+  font-size: 4rem; /* Bigger title */
+  font-weight: bold;
+  color: #eddb82; /* Set title text color to yellow */
+}
+
+/* Large centered input box */
+.input-box {
+  padding: 15px;
+  width: 100%;
+  font-size: 1.5rem;
+  border: 2px solid #f6c144;  /* Yellow border */
+  border-radius: 10px;
+  text-align: center;
+  background-color: black; /* Make input background black */
+  color: #f6c144; /* Make input text yellow */
+  margin-bottom: 20px;
+}
+
+/* Output box */
+.output-box {
+  padding: 15px;
+  width: 100%;
+  font-size: 1.5rem;
+  border: 2px solid #f6c144;
+  border-radius: 10px;
+  text-align: center;
+  background-color: black;
+  color: #f6c144;
+}
+
+/* Placeholder text color */
+.input-box::placeholder {
+  color: #f6c144;
+  opacity: 0.7; /* Slightly faded yellow */
+}
+
+/* Progress bar container */
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* The progress bar itself */
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #f6c144;
+}
+
+/* The yellow fill inside the progress bar */
+.progress-fill {
+  height: 100%;
+  background-color: #f6c144;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Metric text below progress bar */
+.metric-value {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #f6c144;
+}
+
+/* Download button */
+.download-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #f6c144;
+  background-color: black;
+  align-items: center;
+  color: #f6c144;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #222;
+}
+
+.download-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input-title {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 500px; 
+  height: auto;
+  margin-bottom:20p
+}
