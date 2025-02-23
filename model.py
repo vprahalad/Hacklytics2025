@@ -2,7 +2,6 @@ import openai
 from dotenv import load_dotenv
 import os
 
-# Load environment variables (if using API keys stored in .env)
 load_dotenv()
 
 class Model:
@@ -18,10 +17,8 @@ class Model:
         )
 
     def generate_sentence(self, code_words):
-        # Convert list of words into a string for the prompt
         words_string = ", ".join(code_words)
 
-        # Make API request
         completion = self.client.chat.completions.create(
             model="gpt-4o",
             messages=[
@@ -32,11 +29,9 @@ class Model:
 
         return completion.choices[0].message.content.strip()
 
-# Example usage
 if __name__ == "__main__":
     model = Model()
     
-    # Example list of code words
     code_words = values
     
     sentence = model.generate_sentence(code_words)
