@@ -15,8 +15,7 @@ def codeWordGen(csvFilepath):
     wordFreq = Counter(allWords)
     freqs = list(wordFreq.values())
     bounds = np.mean(freqs)
-    #Bounds = np.percentile(freqs, 50)
-    # upperBound = freqs[int(n * 0.6)]
+
 
     for word, freq in wordFreq.items():
         if freq == int(bounds):
@@ -26,5 +25,4 @@ def codeWordGen(csvFilepath):
     return wordsInRange
 
 csvFilepath = "cleaned_data.csv"
-#print(codeWordGen(csvFilepath))
 
