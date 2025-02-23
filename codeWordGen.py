@@ -26,5 +26,5 @@ def codeWordGen(csvFilepath):
     return wordsInRange
 
 csvFilepath = "cleaned_data.csv"
-print(codeWordGen(csvFilepath))
+#print(codeWordGen(csvFilepath))
 
