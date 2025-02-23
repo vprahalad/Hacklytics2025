@@ -16,7 +16,7 @@ class Model:
         prompt = self.prompt_engineering.format(sentence=sentence)
 
         response = self.client.chat.completions.create(
-            model="gpt-4",  # Use the correct model
+            model="gpt-4", 
             messages=[
                 {"role": "system", "content": "You are an AI that rates the naturalness of sentences."},
                 {"role": "user", "content": prompt},
