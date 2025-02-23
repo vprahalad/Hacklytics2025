@@ -1,4 +1,6 @@
 # Hacklytics2025: CipherAI
+## Contributors
+Leela Raj-Sankar, Vaishali Prahalad, Rini Bokil, Bryan Wang
 ## Inspiration
 With government censorship and monitoring becoming an active issue across the world, finding methods for secure communication is paramount. With prevalent methods such as RSA, one can easily tell when a message is encrypted, which can lead to users and communities being flagged. This hinders important activist movements and expressions of free speech, which are basic rights and critical to the advancement of our society. Our project, which utilizes Steganography, offers encryption that evades clear encryption flags by mimicking natural speech, therefore protecting the privacy of users. Cipher AI is an AI assisted steganography tool engineered to create better concealed encryptions at ease.
 
