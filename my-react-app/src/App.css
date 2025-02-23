@@ -1,11 +1,10 @@
-
-/* Make the entire background black */
 .container {
   display: flex;
   height: 100vh;
   font-family: Trebuchet MS, sans-serif;
-  background-color: black; /* Set background to black */
-  color: #f6c144;  /* Set text color to yellow */
+  background-color: black; 
+  color: #f6c144; 
+  justify-content: center;
 }
 
 .left-panel {
@@ -13,79 +12,68 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black; /* Ensure left panel stays black */
+  background-color: black;
 }
 
-/* Right panel (Input section) */
 .right-panel {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black; /* Ensure right panel stays black */
+  height: 100%;
+  background-color: black;
+  text-align: left;
+  padding-left: 30px;
 }
+
 
 .vertical-bar {
   width: 2px; 
   background-color: #f6c144;
-
-  ;
   height: 100vh;
 }
 
-/* Title container */
 .title-container {
   text-align: center;
 }
 
-/* Large centered title */
 .title {
-  font-size: 4rem; /* Bigger title */
+  font-size: 4rem; 
   font-weight: bold;
-  color: #eddb82; /* Set title text color to yellow */
+  color: #eddb82;
 }
 
-/* Large centered input box */
-.input-box {
-  padding: 15px;
-  width: 100%;
-  font-size: 1.5rem;
-  border: 2px solid #f6c144;  /* Yellow border */
-  border-radius: 10px;
-  text-align: center;
-  background-color: black; /* Make input background black */
-  color: #f6c144; /* Make input text yellow */
-  margin-bottom: 20px;
-}
-
-/* Output box */
+.input-box,
 .output-box {
   padding: 15px;
-  width: 100%;
+  width: 80%;
   font-size: 1.5rem;
   border: 2px solid #f6c144;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
   background-color: black;
   color: #f6c144;
+  margin-bottom: 20px;
 }
 
-/* Placeholder text color */
+
+
+
 .input-box::placeholder {
   color: #f6c144;
-  opacity: 0.7; /* Slightly faded yellow */
+  opacity: 0.7; 
 }
 
-/* Progress bar container */
 .progress-bar-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: center;  
+  width: 80%;
   margin-top: 20px;
 }
 
-/* The progress bar itself */
+
 .progress-bar {
   width: 100%;
   height: 15px;
@@ -95,21 +83,18 @@
   border: 2px solid #f6c144;
 }
 
-/* The yellow fill inside the progress bar */
 .progress-fill {
   height: 100%;
   background-color: #f6c144;
   transition: width 0.5s ease-in-out;
 }
 
-/* Metric text below progress bar */
 .metric-value {
   margin-top: 5px;
   font-size: 1.2rem;
   color: #f6c144;
 }
 
-/* Download button */
 .download-btn {
   margin-top: 20px;
   padding: 12px 20px;
@@ -141,5 +126,5 @@
 img {
   max-width: 500px; 
   height: auto;
-  margin-bottom:20p
+  margin-bottom: 20px;
 }
