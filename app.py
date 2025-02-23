@@ -72,11 +72,27 @@ def encode_message():
             return jsonify({"error": "Missing text field"}), 400
 
         text = data["text"]  # User input from frontend
-        encoded_text = "This is a sample encoded message"  # Replace with real encoding
-        key = {"example_key": "value"}  # Replace with real key
+        
+        # Generate code words (assume this logic is fine)
+        wordsInRange = codeWordGen("cleaned_data.csv")
+        word_dict, code_words = codeWordAssign(text, wordsInRange)
+
+        text = data["text"]  # User input from frontend
+        encoded_text = sentence_model.generate_sentence(code_words)  # Using model to generate sentence
+
+        # Score the naturalness of the generated sentence
+        score = naturalness_model.score_naturalness(encoded_text)
+
+        # Create a response key (can be modified based on real key logic)
+        key_data = {
+            "original_message": text,
+            "code_words": code_words,
+            "word_dict": word_dict
+        }
+
         metric = 0.85  # Replace with real metric score
 
-        response = {"encoded": encoded_text, "key": key, "metric": metric}
+        response = {"encoded": encoded_text, "key": key_data, "metric": metric}
         print("✅ Sending response:", response)  # Debugging
 
         return jsonify(response)  # Send back response as JSON
